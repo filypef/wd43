@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Mirror Fashion</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/produto.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html">
+                <h1 class="header__logo">Mirror Fashion</h1>
+            </a>
+    
+            <p class="header__sacola">Nenhum item na sacola de compras<span class="header__sacola--product-count"></span><span class="header__sacola--product-clean">Esvaziar Sacola</span></p>
+    
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="#" title="Sua conta">Sua conta</a></li>
+                    <li><a href="#" title="Lista de desejo">Lista de Desejo</a></li>
+                    <li><a href="#" title="Cartão Fidelidade">Cartão Fidelidade</a></li>
+                    <li><a href="#" title="Sobre">Sobre</a></li>
+                    <li class="header__menu-drop"><a href="#" title="Ajuda">Ajuda</a>
+                        <ul class="header__menu-drop-list">
+                            <li><a href="#" class="header__list-contato">Contato</a></li>
+                            <li><a href="#">Produtos</a></li>
+                            <li><a href="#">Produtos</a></li>
+                            <li><a href="#">Produtos</a></li>
+                            <li><a href="#">Produtos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container produto-back">            
+            <section class="produto">
+                <h1 class="produto__title">Fuzzy Cardigan</h1>
+                <p>Por apenas R$ 129,00</p>
+                
+                <form action="checkout.html" method="POST">
+                    <fieldset class="produto__cores">
+                        <legend>Escolha a cor:</legend>
+                        
+                        <input type="radio" name="cor" value="verde" id="produto__cores--verde" checked>
+                        <label for="produto__cores--verde">
+                            <img src="img/produtos/foto1-verde.png" alt="Produto na cor verde">
+                        </label>
+    
+                        <input type="radio" name="cor" value="rosa" id="produto__cores--rosa">
+                        <label for="produto__cores--rosa">
+                            <img src="img/produtos/foto1-rosa.png" alt="Produto na cor rosa">
+                        </label>
+    
+                        <input type="radio" name="cor" value="azul" id="produto__cores--azul">
+                        <label for="produto__cores--azul">
+                            <img src="img/produtos/foto1-azul.png" alt="Produto na cor Azul">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="produto__tamanho">
+                        <legend>Escolha o Tamanho: </legend>
+                        <input type="range" min="36" max="46" value="42" step="2" id="tamanho" name="tamanho">
+                        <output for="tamanho" name="tamanho">42</output>
+                    </fieldset>
+    
+                    <button class="produto__btn-comprar">Comprar</button>
+                </form>
+            </section>
+
+            <section class="detalhes">
+                <h2 class="detalhes__title">Detalhes do Produto</h2>
+                <p class="detalhes__paragraph">Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</p>
+
+                <p class="detalhes__paragraph">Leite de capivaris, leite de mula manquis sem cabeça. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. In elementis mé pra quem é amistosis quis leo. Atirei o pau no gatis, per gatis num morreus.</p>
+
+                <table class="detalhes__table">
+                    <thead>
+                        <tr>
+                            <th>Caracteristicas</th>
+                            <th>Detalhes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Modelo</td>
+                            <td>Cardigã 7845</td>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>Algodão e poliester</td>
+                        </tr>
+                        <tr>
+                            <td>Cores</td>
+                            <td>Azul, Rosa e Verde</td>
+                        </tr>
+                        <tr>
+                            <td>Lavagem</td>
+                            <td>Lavar a mão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <aside class="container">
+            <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
+
+            <ul class="footer__list-rede-social">
+                <li><a href="http://www.facebook.com.br" title="Facebook">Facebook</a></li>
+                <li><a href="http://www.twitter.com" title="Twitter">Twitter</a></li>
+                <li><a href="http://www.plus.google.com.br" title="Google+">Google+</a></li>
+            </ul>
+        </aside>
+    </footer>
+</body>
+</html>

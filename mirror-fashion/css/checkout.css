@@ -1,0 +1,7 @@
+:root{
+    --purple: #800080;
+    --white: #fff;
+}
+.form-control:invalid{
+    outline: 1px solid #cc0000;
+}

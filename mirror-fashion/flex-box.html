@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        max-width: 940px;
+        margin: 0 auto;
+    }
+    .container__itens{
+        display: flex;
+        flex-direction: column;
+    }
+    .itens{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 30px;
+        border:1px solid blue;
+    }
+    
+    @media ( min-width: 468px ){
+        .container__itens{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .itens{
+            width: 30%;
+            border: 1px solid red;
+        }
+    }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="container__itens">
+            <div class="itens item1">
+                <p>XXX</p>
+            </div>
+            <div class="itens item2"></div>
+            <div class="itens item3"></div>
+        </section>
+    </main>
+</body>
+</html>
