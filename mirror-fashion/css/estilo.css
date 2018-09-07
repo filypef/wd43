@@ -223,6 +223,12 @@ body{
     background-color: var(--purple);
     color: var(--orange);
 }
+.paines__painel li:nth-child(n+7){
+    display: none;
+}
+.paines__painel--aberto li:nth-child(n+7){
+    display: block;
+}
 .paines__painel a{
     color: var(--gray);
     text-decoration: none;
