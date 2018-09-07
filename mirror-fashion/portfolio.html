@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    :root{
+        --gray: rgb(214, 214, 214);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menu__principal{
+        background-color: var(--gray);
+        display: flex;
+    }
+    .menu__principal ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .menu__principal li{
+        list-style: none;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__img img{
+        max-width: 100%;
+    }
+    .container__content{
+        border: 1px solid red;
+
+    }
+
+    @media (min-width: 468px){
+        .menu__principal ul{
+            flex-direction: row;
+        }
+        .container{
+            flex-direction: row;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header class="menu__principal">
+        <ul>
+            <li>Quem sou</li>
+            <li>Cursos</li>
+            <li>Contato</li>
+        </ul>
+    </header>
+    <main class="container">
+        <section class="container__img">
+            <figure>
+                <img src="https://images.filmesnocinema.com.br/artist-photos/ramon-valdes.jpg" alt="">
+            </figure>
+        </section>
+        <section class="container__content">
+            <h1>Filype Moraes Ferreira</h1>
+            <p>Tenho 28 anos</p>
+            <p>Moro em São Paulo</p>
+            <div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
