@@ -4,7 +4,7 @@
 
     console.log($inputQuantidade);
     console.log($outputTotal);
-    $inputQuantidade.oninput = function (){
+    $inputQuantidade.oninput = ()  => {
         debugger;
         var preco = document.querySelector('#preco').textContent;
 
